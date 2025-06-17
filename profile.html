@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profil Guru - PROFIL</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        .profile-container {
+            max-width: 1200px;
+            margin: 100px auto 50px;
+            padding: 2rem;
+        }
+
+        .profile-header {
+            display: flex;
+            gap: 3rem;
+            margin-bottom: 3rem;
+            background: #fff;
+            padding: 2rem;
+            border-radius: 15px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+        }
+
+        .profile-image {
+            width: 300px;
+            height: 300px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 5px solid #3498db;
+        }
+
+        .profile-info {
+            flex: 1;
+        }
+
+        .profile-info h1 {
+            color: #2c3e50;
+            margin-bottom: 1rem;
+        }
+
+        .profile-info p {
+            margin-bottom: 1rem;
+            line-height: 1.8;
+        }
+
+        .profile-details {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            margin-bottom: 3rem;
+        }
+
+        .detail-card {
+            background: #fff;
+            padding: 2rem;
+            border-radius: 15px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+        }
+
+        .detail-card h3 {
+            color: #2c3e50;
+            margin-bottom: 1rem;
+            border-bottom: 2px solid #3498db;
+            padding-bottom: 0.5rem;
+        }
+
+        .detail-card ul {
+            list-style: none;
+        }
+
+        .detail-card li {
+            margin-bottom: 0.5rem;
+            padding-left: 1.5rem;
+            position: relative;
+        }
+
+        .detail-card li:before {
+            content: "•";
+            color: #3498db;
+            position: absolute;
+            left: 0;
+        }
+
+        .social-links {
+            display: flex;
+            gap: 1rem;
+            margin-top: 1rem;
+        }
+
+        .social-links a {
+            color: #2c3e50;
+            font-size: 1.5rem;
+            transition: color 0.3s ease;
+        }
+
+        .social-links a:hover {
+            color: #3498db;
+        }
+
+        @media (max-width: 768px) {
+            .profile-header {
+                flex-direction: column;
+                align-items: center;
+                text-align: center;
+            }
+
+            .profile-image {
+                width: 200px;
+                height: 200px;
+            }
+
+            .social-links {
+                justify-content: center;
+            }
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <div class="nav-content">
+            <div class="logo">
+                <a href="profile.html">GURU UPTD SDN OEHENDAK</a>
+            </div>
+            <ul class="nav-links">
+                <li><a href="index.html">Beranda</a></li>
+                <li><a href="profile.html">Profil</a></li>
+                <li><a href="index.html#experience">Pengalaman</a></li>
+                <li><a href="index.html#gallery">Galeri</a></li>
+                <li><a href="index.html#contact">Kontak</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="profile-container">
+        <div class="profile-header">
+            <img src="https://www.imghost.net/goEOi5myjEOmKhN" alt="Foto Profil" class="profile-image">
+            <div class="profile-info">
+                <h1>Nama Lengkap</h1>
+                <p style="font-size: 15pt;">NONI RETMAN NENOTEK</p>
+                <p>Seorang pendidik yang berdedikasi dengan pengalaman mengajar lebih dari 7 tahun. Berkomitmen untuk menciptakan lingkungan belajar yang menyenangkan dan efektif bagi siswa-siswa di UPTD SDN OEHENDAK.</p>
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-whatsapp"></i></a>
+                    <a href="#"><i class="fab fa-tiktok"></i></a>
+                </div>
+            </div>
+        </div>
+
+        <div class="profile-details">
+            <div class="detail-card">
+                <h3>Pendidikan</h3>
+                <ul>
+                    <li>S1 Pendidikan Guru Sekolah Dasar</li>
+                    <li>Universitas Nusa Cendana</li>
+                    <li>Tahun 2014-2018</li>
+                </ul>
+            </div>
+
+            <div class="detail-card">
+                <h3>Keahlian</h3>
+                <ul>
+                    <li>Pengembangan Kurikulum</li>
+                    <li>Manajemen Kelas</li>
+                    <li>Pembelajaran Interaktif</li>
+                    <li>Teknologi Pendidikan</li>
+                    
+                </ul>
+            </div>
+
+            <div class="detail-card">
+                <h3>Sertifikasi</h3>
+                <ul>
+                    <li>Sertifikasi Guru Profesional</li>
+                    <li>Workshop Pembelajaran Digital</li>
+                    <li>Pelatihan Kurikulum Merdeka</li>
+                    <li>Seminar Pendidikan Inklusif</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="detail-card">
+            <h3>Visi & Misi</h3>
+            <p><strong>Visi:</strong> Menjadi pendidik yang inspiratif dan inovatif dalam menciptakan generasi unggul yang berkarakter.</p>
+            <p><strong>Misi:</strong></p>
+            <ul>
+                <li>Menciptakan lingkungan belajar yang aman dan nyaman</li>
+                <li>Mengembangkan metode pembelajaran yang kreatif dan efektif</li>
+                <li>Membimbing siswa untuk mencapai potensi terbaik mereka</li>
+                <li>Mengintegrasikan teknologi dalam proses pembelajaran</li>
+                <li>Membangun kerjasama dengan orang tua dan masyarakat</li>
+            </ul>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2025 UPTD SDN OE HENDAK. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html> 
