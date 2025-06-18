@@ -28,8 +28,9 @@ nav {
     margin: 0 auto;
     padding: 1rem;
     display: flex;
-    justify-content: space-between;
+    flex-wrap: wrap;
     align-items: center;
+    justify-content: space-between;
 }
 
 .logo a {
@@ -41,7 +42,11 @@ nav {
 
 .nav-links {
     display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
     list-style: none;
+    padding: 0;
+    margin: 0;
 }
 
 .nav-links li {
@@ -132,9 +137,9 @@ section h2 {
 
 .gallery-item img {
     width: 100%;
-    height: 200px;
-    object-fit: cover;
+    height: auto;
     border-radius: 10px;
+    display: block;
     transition: transform 0.3s ease;
 }
 
@@ -214,24 +219,24 @@ footer {
 @media (max-width: 768px) {
     .nav-content {
         flex-direction: column;
-        gap: 1rem;
+        align-items: flex-start;
     }
-
     .nav-links {
         flex-direction: column;
-        text-align: center;
+        width: 100%;
+        gap: 0.5rem;
+    }
+    .hero-content {
+        padding: 1rem;
+    }
+    .about, .experience, .gallery, .contact {
+        padding: 1rem 0.5rem;
+    }
+    .experience-grid, .gallery-grid {
+        grid-template-columns: 1fr;
+    }
+    .contact-content {
+        flex-direction: column;
         gap: 1rem;
-    }
-
-    .nav-links li {
-        margin: 0;
-    }
-
-    .hero-content h1 {
-        font-size: 2rem;
-    }
-
-    .hero-content p {
-        font-size: 1.2rem;
     }
 } 

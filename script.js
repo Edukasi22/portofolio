@@ -12,9 +12,9 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
 window.addEventListener('scroll', function() {
     const nav = document.querySelector('nav');
     if (window.scrollY > 50) {
-        nav.style.backgroundColor = 'rgba(255, 255, 255, 0.95)';
+        nav.style.background = 'linear-gradient(135deg, #1e3c72 0%, #2a5298 50%, #ffd700 100%)';
     } else {
-        nav.style.backgroundColor = '#fff';
+        nav.style.background = 'linear-gradient(135deg, #1e3c72 0%, #ffd700 100%)';
     }
 });
 
